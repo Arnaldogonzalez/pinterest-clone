@@ -28,7 +28,7 @@ let cards = [{
   subImg2: require('./img/sub2.jpg')
 }];
 
-class Images extends Component {
+const Images extends Component {
   render(){
     const {mainImg, subImg1, subImg2} = this.props;
       return (
@@ -47,7 +47,7 @@ Images.propTypes = {
   subImg2: PropTypes.image.isRequired
 };
 
-class Board extends Component {
+const Board extends Component {
   state = {
     list: cards
   };
